@@ -1,0 +1,40 @@
+body{
+  background-color: #000;
+}
+
+.container{
+  background-color: #fff;
+  width: 800px;
+  height: 300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.circle::before{
+  content:' ';
+  
+  
+  width: 200px;
+  height: 200px;
+  display:block;
+  border:20px solid #000;
+  border-radius:50%;
+  box-sizing:border-box;
+  position:relative;
+  
+ 
+  
+}
+
+.circle{
+  
+  width: 200px;
+  height: 200px;
+  /* border:20px solid black; */
+  box-sizing:border-box;
+  background-color: #999;
+  margin-left:-80px;
+  border-radius:50%;
+  
+}

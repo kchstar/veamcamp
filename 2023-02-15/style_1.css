@@ -1,0 +1,35 @@
+body{
+  background-color: #000;
+  
+}
+.container{
+  width: 800px;
+  height: 300px;
+  background-color: #fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
+}
+
+.circle::before{
+  content:'';
+  width: 200px;
+  height: 200px;
+ 
+  border:20px solid #999;
+  display:block;
+  border-radius:50%;
+  position:absolute;
+  box-sizing:border-box;
+  
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  margin:-40px;
+  /* box-sizing:border-bax; */
+  border-radius:50%;
+}

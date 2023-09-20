@@ -1,0 +1,109 @@
+
+/* reset */
+body,p{
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'arial';
+}
+/* Typegraphy */
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/* Variables */
+:root{
+    --wing :calc(-1 * ((100vw - 100%) / 2));
+}
+
+/* layouts */
+.l-wrapper   {
+    
+    width: 1200px;
+    
+    margin:0 auto;
+}
+
+/* components */
+body{
+    background-color: #fff;
+}
+.header {
+    background-image: url(./bg_1.png);
+    padding-top:100px;
+    background-size: cover;
+}
+.container{
+    border-width:30px 30px 0 30px;
+    border-style:solid;
+    color:orange;
+    padding:20px; 
+    display:flex;
+    align-items:flex-start;
+    gap:40px;
+    overflow:hidden;
+   
+}
+.container-contents{
+    box-shadow:inset 0 0 10px red;
+}
+.container-contents h1{
+    font-size: 5rem;
+    margin-bottom:20px;
+    margin-top:-0.18em;
+    letter-spacing: 0.2em;
+    border-bottom:4px solid;
+    width:max-content;
+}
+
+  
+.container-cover{
+    box-shadow: 0 0 10px purple;
+    margin-bottom:-100px;
+}
+.contents{
+    box-shadow:inset 0 0 10px blue;
+    
+}
+.explorer{
+    box-shadow:inset 0 0 10px orangered;
+    align-items:stretch;
+    display:flex;
+    gap:40px;
+    
+}
+
+.explorer-title{
+    background-color: white;
+    flex-basis:300px;
+    padding:40px;
+    color:#999;
+    border-radius:25px;
+}
+.explorer-title h2{
+    font-size: 4rem;
+    line-height: 1.2;
+}
+.explorer-button{
+    background-image: url(arrow.svg);
+    width: 60px;
+    height: 60px;
+    text-indent: -999px;
+    cursor: pointer;
+}
+.explorer-contents{
+    box-shadow:inset 0 0 100px blue;
+
+    flex-grow:1;
+    margin-right: var(--wing);
+
+}
+
+.footer{
+    box-shadow:inset 0 0 10px yellow;
+}

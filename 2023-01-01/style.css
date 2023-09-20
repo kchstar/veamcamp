@@ -1,0 +1,19 @@
+body{
+  background-color: blue;
+}
+.wrapper{
+  background-color: #fff;
+   width: 800px;
+  
+  margin:50px 300px;
+}
+img{
+  width: 600px;
+  height: 400px;
+  vertical-align: top;
+  vertical-align:bottom;
+}
+span{
+  background-color: orangered;
+  padding-left:4px;
+}

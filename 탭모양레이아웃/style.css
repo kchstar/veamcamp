@@ -1,0 +1,223 @@
+body{
+  margin:initial;
+}
+ul{
+  padding:initial;
+  margin:initial;
+}
+li{
+  list-style-type:none;
+}
+img{
+  max-width:100%;
+  vertical-align: top;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:initial;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+strong{
+  font-weight: inherit;
+}
+
+/* Variables */
+:root{
+  --color-primary:orangered;
+  --color-gray-light:#ddd;
+  --color-gray:#999;
+  --color-white:#fff;
+  --color-secondary:olive;
+  --border-width:6px;
+  --color-gray-dark:#444;
+  --color-gray-lighten:#f4f4f4;
+}
+
+
+/* Typography */
+:root{
+  font-size: 62.5%;
+}
+body{
+  background-color: var(--colot-gray-light);
+  color:var(--color-gray);
+  background-image: linear-gradient(to bottom,rgba(255,255,255,1)0% rgba(255,255,255,0)100%);
+  background-image: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(255,0,0,0)100%);
+  font-size: 1.4rem;
+  background-repeat: repeat-x;
+  background-size: 200px 400px;
+  background-attachment: fixed;
+
+}
+.wrapper{
+  /* border:10px solid red; */
+ /*width: 1200px;  1200까지커지다가 max-width까지만커지는것 */
+  max-width:1200px; /* 1200보다는못커저 */
+  margin:0 auto;
+}
+/* components */
+body{
+  background-color: var(--color-gray-light);
+  color:var()
+
+}
+.header{
+  padding:60px 0;
+}
+.header-title{
+  font-family: 'Prosto One', cursive;
+  font-size: 2rem;
+  color:#444;
+
+}
+.header-title strong{
+  font-size: 4rem;
+  display:block;
+  color:orange;
+}
+.contents{
+  background-color: rgba(0,0,0,.2);
+}
+.contents-tabs{
+  color:blue;
+  padding:0;
+  display:flex;
+  padding:0 20px;
+  gap:8px;
+  margin:inherit;
+  font-size: 1.8rem;
+  font-family:'arial';
+  margin-bottom:-4px;
+}
+.contents-tabs li a{
+  background-color: gold;
+  padding:0 20px;
+  display:block;
+  height: 48px;
+  text-indent:0.2rem;
+  letter-spacing: 0.2em;
+  line-height: 48px;
+  border-radius:20px 20px 0 0 ;
+  border-width:var(--border-width) var(--border-width)0 var(--border-width);
+  border-color:transparent;
+  border-style:solid;
+}
+.contents-tabs li a.is_active{
+  background-color: var(--color-white);
+  color:var(--color-secondary);
+  border-width:6px 6px 0 6px;
+  border-style:solid;
+  border-color:currentColor;
+  box-shadow:0 calc(var(--border-width) * 2) 0 calc( var(--border-width) * -1) var(--color-white);
+}
+
+.contents-main{
+  background-color: var(--color-white);
+  border:var(--border-width) solid var(--color-secondary);
+  padding:20px;
+  min-height:200vh;
+}
+.container {
+  border:1px solid purple;
+  display:flex;
+  gap:20px;
+}
+.container-nav{
+  
+  flex-basis:200px;
+}
+.container-contents{
+  box-shadow:inset 0 0 100px orange;
+  flex-basis:auto;
+  flex-grow:1;
+  min-width:0;
+  vertical-align: top;
+  height:302px;
+}
+.shop{
+  letter-spacing:0.2em;
+}
+.shop li + li{
+  border-top:1px solid var(--color-gray-light);
+}
+.shop li a{
+  display:block;
+  padding:10px 0;
+}
+.shop li a.is_active{
+  color:var(--color-primary);
+}
+.grid{
+  background-color: rgba(84, 146, 94, 0.185);
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.grid-item{
+  
+  background-color: var(--color-white);
+  background-color: red;
+  display:flex;
+  flex-direction:column;
+
+}
+.grid-item-cover{
+  background-color: orange;
+  /* height: 140px; */
+  aspect-ratio: 16/9;
+  position:relative;
+  min-height:0;  /*본문사이즈보다작게한다*/
+  flex-basis: auto;  /*auto는 아래height-100이적용된다*/
+  height:100px;      /**/
+
+}
+
+.grid-item-contents{
+  flex-basis:auto;
+  min-height:auto;
+  height:100px;
+  overflow: hidden;
+}
+.grid-item-cover img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.grid-item-contents{
+  padding:10px;
+  flex-grow:1;
+  
+}
+
+.grid-item-badge{
+  background-color: var(--color-primary);
+  color:var(--color-white);
+  position:absolute;
+  right: 0;
+  top: 0;
+  margin:10px;
+  padding:5px;
+  font-size: 0.6rem;
+  letter-spacing:0.2em;
+  text-indent:0.2em;
+}
+.grid-item-footer{
+  border-top:1px solid var(--color-gray-light);
+  background-color: var(--color-gray-lighten);
+  padding:10px;
+
+
+}
+
+.footer{
+  padding: 20px 0;
+  border-top:
+}
+
